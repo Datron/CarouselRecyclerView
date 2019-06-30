@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CarouselRecyclerViewLibrary</string>
+    <string name="previous_window">previous window</string>
+    <string name="next_window">next window</string>
+    <string name="heading">heading</string>
+</resources>
