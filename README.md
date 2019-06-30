@@ -2,8 +2,8 @@
 
 Create a Carousel of Recycler Views that shows different data based on the header. Works with any kind of RecyclerView layouts like linear or grid.
 
-| <img src="https://i.imgur.com/9USneXZ.gif" alt="gif2" width="350" height="600"> | <img src="https://i.imgur.com/xTeNWF3.gif" alt="gif2" width="350" height="600"> |
----|---|---
+<img src="https://i.imgur.com/9USneXZ.gif" alt="gif2" width="350" height="600"> <img src="https://i.imgur.com/xTeNWF3.gif" alt="gif2" width="350" height="600">
+
 
 # Gradle
 
