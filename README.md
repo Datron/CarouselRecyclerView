@@ -13,7 +13,7 @@ implementation 'com.datron.carouselrecyclerviewlibrary:carouselrecyclerviewlibra
 ```
 # Implementation
 
-CarouselRecyclerView requires you to define the behaviour and layout of your view holder and recycler view adapter. It works with custom layouts.
+CarouselRecyclerView requires you to define the behaviour and layout of your view holder and recycler view adapter. It works with custom layouts. Check out this example implementation here: [app example](https://github.com/Datron/CarouselRecyclerView/tree/master/app/src/main/java/com/datron/carouselrecyclerview)
 
 Steps to implement CarouselRecyclerView
 - Implement the standard RecyclerView.ViewHolder (within your recycler view adapter)
@@ -71,3 +71,8 @@ Steps to implement CarouselRecyclerView
      FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
     ft.add(R.id.root,fragment).commit();
     ```
+# Usage
+    This project is licensed under the Apache 2.0 License. If you use this library, do let me know and I will add your app to the list of projects in this readme.
+    
+# List of Projects
+    
