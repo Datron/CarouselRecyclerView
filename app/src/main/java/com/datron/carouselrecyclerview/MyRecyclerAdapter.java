@@ -13,7 +13,7 @@ import com.datron.carouselrecyclerviewlibrary.CarouselRecyclerAdapter;
 import java.util.ArrayList;
 
 /**
- * Created by Kartik on 29-Jun-19.
+ * Created by Datron on 29-Jun-19.
  */
 public class MyRecyclerAdapter extends CarouselRecyclerAdapter<MyRecyclerAdapter.SubjectViewHolder> {
     private ArrayList<String> data;

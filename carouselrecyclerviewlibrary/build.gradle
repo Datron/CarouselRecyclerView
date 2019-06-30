@@ -1,17 +1,36 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = "carouselrecyclerview"
+    bintrayName = "com.datron.carouselrecyclerview"
+    libraryName = "carouselrecyclerviewlibrary"
+
+    //artifact information
+    publishedGroupId = "com.datron.carouselrecyclerview"
+    artifact = "carouselrecyclerviewlibrary"
+    libraryVersion = "1.0.0"
+
+    libraryDescription = "Create a Carousel of Recycler Views that shows different data based on the header. Works with any kind of RecyclerView layouts like linear or grid."
+    siteUrl = "https://github.com/Datron/CarouselRecyclerView"
+    gitUrl = "https://github.com/Datron/CarouselRecyclerView.git"
+    developerId = "datron"
+    developerName = "datron"
+    licenseName = "The Apache Software License, Version 2.0"
+    developerEmail = ""
+    licenseUrl = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 28
-
-
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -29,7 +48,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'com.google.android.material:material:1.0.0-rc01'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
@@ -37,4 +55,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+if (project.rootProject.file('local.properties').exists()){
+    apply from: "https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle"
+    apply from: "https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle"
 }
